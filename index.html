@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A simple HTML page demonstrating semantic markup, accessibility, and SEO basics.">
+        <meta name="keywords" content="HTML, semantic tags, accessibility, SEO">
+        <title>Web Development V2 Assignment 1: Semantic HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Random Image</h1>
+            <nav aria-label="Primary navigation">
+                <ul>
+                    <li><a href="#image-section">Image</a></li>
+                    <li><a href="#article-section">HTML Article</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="image-section" aria-labelledby="image-heading">
+                <h2 id="image-heading">Two People Swinging</h2>
+                <figure>
+                    <img src="PIC1.jpg" alt="Two people happily swinging on a playground swing set.">
+                    <figcaption>An image showing two people enjoying a swing.</figcaption>
+                </figure>
+            </section>
+
+            <article id="article-section" aria-labelledby="article-heading">
+                <h2 id="article-heading">Learn More About HTML</h2>
+                <p>Explore this detailed guide to deepen your HTML knowledge:</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" aria-label="Read the full HTML guide">
+                    Learn more about HTML in this documentation
+                </a>
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2023 Web Development Assignment.</p>
+        </footer>
+    </body>
+</html>
